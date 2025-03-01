@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="my-auto mx-20">
+    <!-- navbar -->
+    <div class="navbar bg-base-100 shadow-sm rounded-sm">
+        <div class="navbar-start">
+            <img src="A5-Dev-Board-main/assets/logo.png" alt="">
+            <a class="btn btn-ghost text-2xl">Dev<span class="font-extrabold">Board</span></a>
+        </div>
+        <div class="navbar-end gap-10">
+            <div class="flex gap-2"><img src="A5-Dev-Board-main/assets/checkbox.png" alt="">
+                <p class="font-bold">23</p>
+            </div>
+            <a class="btn"><img src="A5-Dev-Board-main/assets/theme-btn.png" alt=""></a>
+        </div>
+    </div>
+    <!-- main -->
+    <main class="flex my-5 shadow-sm rounded-sm gap-5">
+        <!-- task-section -->
+        <section class="shadow-sm rounded-sm w-2/3">
+            <!-- card flex -->
+            <div class="flex justify-between gap-x-10 p-4">
+                <!-- task assigned -->
+                <div class="flex items-center rounded-sm gap-4 p-4 bg-[#F4F7FF]">
+                    <img class="w-5 h-5"
+                        src="A5-Dev-Board-main/assets/checkbox.png" alt="">
+                    <div>
+                        <p class="text-xs">Task Assigned</p>
+                        <p class="font-bold text-2xl">05</p>
+                    </div>
+                </div>
+                <!-- discover something new -->
+                <div class="flex flex-1 items-center justify-center rounded-sm gap-4 p-4 bg-gradient-to-br from-[#3752fd] via-[#6c7ffa] to-[#9ba8f8]"><img
+                        class="" src="A5-Dev-Board-main/assets/board.png" alt="">
+                    <div>
+                        <p class="text-white font-bold">Discover something <br> new today!</p>
+                    </div>
+                </div>
+                <!-- date -->
+                <div class="flex items-center rounded-sm gap-4 p-4  bg-[#F4F7FF]"><img class="w-5 h-5" src="A5-Dev-Board-main/assets/calender.png"
+                        alt="">
+                    <div>
+                        <p id="current-date"></p>
+                    </div>
+                </div>
+            </div>
+            <!-- card grid -->
+
+        </section>
+        <!-- activity-section -->
+        <section class="shadow-sm flex-1 rounded-sm h-screen flex-col  justify-center">
+            <div class="flex bg-slate-500 flex-1 flex-col p-8 rounded-md">
+                <div class="flex justify-center items-center gap-2">
+                    <img src="A5-Dev-Board-main/assets/activity.png" alt="">
+                    <h1 class="font-semibold">Activity Log</h1>
+                </div>
+                <div class="flex justify-center items-center">
+                    <button class="btn mt-2 text-white bg-blue-500">Clear History</button>
+                </div>
+            </div>
+            <div class="flex mt-4 flex-col gap-4 p-4">
+                <p class="bg-[#F4F7FF]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae qui, minima est labore,
+                    architecto ratione accusamus expedita eveniet, temporibus libero optio! Deserunt eos laboriosam
+                    nulla unde assumenda eum ad expedita.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nesciunt pariatur eum alias quisquam.
+                    Enim cupiditate molestias necessitatibus quidem minus corrupti magni porro debitis? Aspernatur
+                    impedit ipsa voluptates et quia.</p>
+            </div>
+        </section>
+
+        <!-- scripts -->
+        <script src="local-date.js"></script>
+
+    </main>
+</body>
+
+</html>
