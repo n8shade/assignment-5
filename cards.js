@@ -10,6 +10,12 @@ buttons.forEach(button => {
         assignedTasks.innerText = currentCount - 1;
         totalTasks.innerText = currentTotalCount + 1;
         event.target.disabled = true;
+        const paragraph = document.getElementById("paragraph")
+        const p = document.createElement("p");
+        p.innerText=`
+        task completed successfully, bye bye
+        `
+        paragraph.appendChild(p)
     });
 });
 
