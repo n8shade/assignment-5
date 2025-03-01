@@ -11,9 +11,10 @@ buttons.forEach(button => {
         totalTasks.innerText = currentTotalCount + 1;
         event.target.disabled = true;
         const paragraph = document.getElementById("paragraph")
+        const currentTime = new Date().toLocaleTimeString();
         const p = document.createElement("p");
-        p.innerText=`
-        task completed successfully, bye bye
+        p.innerText = `
+        Task successfully completed at ${currentTime}!!
         `
         paragraph.appendChild(p)
     });
